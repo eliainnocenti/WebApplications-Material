@@ -1,27 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Heap Overrun</title>
+        <!-- Include Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
-    <body>
-        <h1>
-           Best way of enumerating an array in JS?
-        </h1>
-        <table>
-            <tr>
-                <th>Date</th>
-                <th>Text</th>
-                <th>Author</th>
-                <th>Score</th>
-                <th>Action</th>
-            </tr>
-            <tr>
-                <td>2024-03-07</td>
-                <td>for of</td>
-                <td>Alice</td>
-                <td>3</td>
-                <td>Vote</td>
-            </tr>
-        </table>
+    <body class="d-flex flex-column min-vh-100">
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">HeapOverrun</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Questions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main content -->
+        <div class="container my-4">
+            <!-- Question title -->
+            <h1 class="mb-4">Best way of enumerating an array in JS?</h1>
+            <!-- Answers table -->
+            <h2>Answers:</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Text</th>
+                        <th>Author</th>
+                        <th>Score</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example answer row -->
+                    <tr>
+                        <td>2024-03-07</td>
+                        <td>for of</td>
+                        <td>Alice</td>
+                        <td>3</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm">Vote</button>
+                        </td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+            <!-- Add new answer form -->
+            <div class="mt-4">
+                <h3>Add your answer:</h3>
+                <form>
+                    <div class="mb-3">
+                        <label for="answerText" class="form-label">Answer Text</label>
+                        <textarea class="form-control" id="answerText" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="authorName" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="authorName">
+                    </div>
+                    <button type="submit" class="btn btn-success">Add</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-light text-center py-3 mt-auto">
+            <p class="mb-0">&copy; 2023 - WA1</p>
+        </footer>
+
+        <!-- Include Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

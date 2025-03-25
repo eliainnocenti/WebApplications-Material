@@ -25,6 +25,12 @@ This folder contains all the exercises for the Web Applications course. The exer
   - Contains both a standard `qa-server` and a `qa-server-BUGGY-SQL-injection` folder for comparative learning.
   - Check the individual [`EXERCISES.md`](week04/EXERCISES.md) and README files for instructions.
 
+- **week05**  
+  - Focuses on creating a static Q&A interface using HTML and CSS.
+  - Utilizes the Bootstrap framework for styling and layout.
+  - Files: `html_css/page_v1.html`, `html_css/EXERCISE.md`
+  - Detailed instructions are in [`EXERCISE.md`](week05/html_css/EXERCISE.md).
+
 ## Guidelines
 
 - **Read the Instructions:** Each week has its own `EXERCISES.md` file with detailed instructions.
