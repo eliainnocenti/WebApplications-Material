@@ -1,0 +1,15 @@
+/* 
+ * [2024/2025]
+ * Web Applications
+ * Custom CSS for the Film Library GUI
+ */
+
+/* Class for favorite movies (red text) */
+.favorite {
+    color: red;
+}
+
+/* Class for empty stars to become blue on mouse over */
+.bi-star:hover {
+    color: #00d0ff;
+}

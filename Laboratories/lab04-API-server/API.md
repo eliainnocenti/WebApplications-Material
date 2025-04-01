@@ -1,4 +1,9 @@
-# Lab 03 - APIs with Express
+# Lab 04 - APIs with Express
+
+## Notes on Security and Validation
+- All APIs use parameterized queries to prevent SQL injection.
+- Input parameters are validated using `express-validator`.
+- Error responses include meaningful messages for invalid requests.
 
 ## List of APIs offered by the server
 
@@ -16,6 +21,7 @@ Provide a short description for API with the required parameters, follow the pro
 
 * `GET /api/films`
 * Description: Get the full list of films or the films that match the optional query filter parameter `?filter=`
+* Security: Validates the `filter` parameter to ensure it matches allowed values.
 * Request body: _None_
 * Request query parameter: _filter_ name of the filter to apply (all, favorite, best, lastmonth, unseen)
 * Response: `200 OK` (success)
@@ -47,6 +53,7 @@ Provide a short description for API with the required parameters, follow the pro
 
 * `GET /api/films/:id`
 * Description: Get the film corresponding to the id 
+* Security: Validates that the `id` is a positive integer.
 * Request body: _None_
 * Response: `200 OK` (success)
 * Response body: One object describing the required film:
@@ -69,6 +76,7 @@ Provide a short description for API with the required parameters, follow the pro
 
 * `POST /api/films`
 * Description: Create a new film
+* Security: Validates all input fields and ensures proper error handling.
 * Request body: description of the object to add (film id value is not required and it is ignored)
 
 ``` JSON
@@ -89,6 +97,7 @@ Provide a short description for API with the required parameters, follow the pro
 
 * `PUT /api/films/:id`
 * Description: Update all values of an existing film, except the id.
+* Security: Ensures the `id` in the body matches the `id` in the URL.
 * Request body: description of the object to update. The "id" property, if present in body, must match the one in the URL.
 
 ``` JSON
@@ -108,7 +117,8 @@ Provide a short description for API with the required parameters, follow the pro
 #### Delete an existing film
 
 * `DELETE /api/films/:id`
-* Description: Delete an existing film 
+* Description: Delete an existing film
+* Security: Validates the `id` and ensures proper error handling.
 * Request body: _None_
 
 * Response: `200 OK` (success)
@@ -120,6 +130,7 @@ Provide a short description for API with the required parameters, follow the pro
 
 * `POST /api/films/change-rating`
 * Description: Change the rating value of an existing film. If the provided delta yields a result <1 or >5, the value is clipped to 1 or 5. If the rating is not yet set, the API will return an error.
+* Security: Validates the `id` and ensures the new rating is within the valid range.
 * Request body: desired variation of the rating
 
 ``` JSON
@@ -137,6 +148,7 @@ Provide a short description for API with the required parameters, follow the pro
 #### Mark a film as favorite or unfavorite
 * `PUT /api/films/:id/favorite`
 * Description: Update (i.e., overwrite) the property values of an existing film (except the id which cannot be modified)
+* Security: Validates the `id` and `favorite` fields.
 * Request body: new values of the properties
 
 ``` JSON

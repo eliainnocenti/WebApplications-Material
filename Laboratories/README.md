@@ -5,9 +5,9 @@ This folder contains all lab assignments for the Web Applications course. Labs a
 ## Overview
 
 - **Lab Objectives:**
-  - Develop practical skills in Node.js, Express, database management, and React.
+  - Develop practical skills in Node.js, Express, database management, React, and front-end development.
   - Learn how to build and test web applications in real-world scenarios.
-  - Understand API design, routing, middleware, and basic security practices.
+  - Understand API design, routing, middleware, basic security practices, and responsive web design.
 
 ## Lab Structure
 
@@ -25,6 +25,19 @@ This folder contains all lab assignments for the Web Applications course. Labs a
   - Covers building RESTful APIs using Express.
   - Contains example routes, API files (`API.http`), and setup instructions.
   - Additional guidance is provided in the PDF file ([`lab03-express.pdf`](lab03-express/resources/lab03-express.pdf)) within the `lab03-express` folder.
+
+- **lab04-API-server**  
+  - Focuses on enhancing the security and robustness of the API server.
+  - Implements input validation using `express-validator` and prevents SQL injection.
+  - Adds a search API to retrieve films by title.
+  - Includes testing for invalid and malicious requests.
+  - Detailed documentation is available in the `README.md` and `API.md` files within the `lab04-API-server` folder.
+
+- **lab05-html-css**  
+  - Introduces front-end development using HTML, CSS, and Bootstrap.
+  - Focuses on creating a static, responsive webpage for the Film Library.
+  - Covers layout design, styling, and responsive behavior using Bootstrap.
+  - Instructions and examples are provided in the `README.md` file within the `lab05-html-css` folder.
 
 ## How to Proceed
 

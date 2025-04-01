@@ -7,7 +7,8 @@
 'use strict';
 const dayjs = require("dayjs");
 
-// Constructor function to create Film objects
+// Constructor function for Film objects
+// Represents a film with id, title, favorite status, watch date, and rating
 function Film(id, title, isFavorite = false, watchDate, rating) {
   this.id = id; // Unique numerical id
   this.title = title; // Film title
@@ -35,7 +36,8 @@ function Film(id, title, isFavorite = false, watchDate, rating) {
   }
 }
 
-// Constructor function to create a FilmLibrary
+// Constructor function for FilmLibrary
+// Represents a collection of films with methods to manage them
 function FilmLibrary() {
   this.list = []; // Array to store films
 
@@ -54,7 +56,8 @@ function FilmLibrary() {
   }
 }
 
-// Main function to create and populate the FilmLibrary
+// Main function to demonstrate the FilmLibrary functionality
+// Creates films, adds them to the library, and prints the library
 function main() {
   // Creating some film entries
   const f1 = new Film(1, "Pulp Fiction", true, "2023-03-10", 5);

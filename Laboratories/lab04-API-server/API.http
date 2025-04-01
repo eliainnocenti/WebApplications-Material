@@ -18,6 +18,9 @@ GET http://localhost:3001/api/films?filter=best HTTP/1.1
 GET http://localhost:3001/api/films?filter=favorite HTTP/1.1
 ###
 
+GET http://localhost:3001/api/searchFilms?titleSubstring=s HTTP/1.1
+###
+
 ## Create new film (without id)
 POST http://localhost:3001/api/films HTTP/1.1
 content-type: application/json
@@ -36,7 +39,6 @@ GET http://localhost:3001/api/films?filter=lastmonth HTTP/1.1
 ## Delete film.
 DELETE http://localhost:3001/api/films/6 HTTP/1.1
 ###
-
 
 ## Update a film.
 PUT http://localhost:3001/api/films/7 HTTP/1.1
@@ -66,7 +68,7 @@ content-type: application/json
 
 {
     "id": 1,
-    "deltaRating": 1
+    "deltaRating": 0
 }
 ###
 
@@ -101,7 +103,7 @@ PUT http://localhost:3001/api/films/1 HTTP/1.1
 content-type: application/json
 
 {
-    "id": 1,
+    "id": 
     "title": "The Hangover",
     "favorite": 7,
     "watchDate": "",

@@ -54,17 +54,20 @@ function FilmLibrary() {
   };
 
   // Method to delete a film by id
+  // Filters out the film with the specified id
   this.deleteFilm = (id) => {
     const newList = this.list.filter(film => film.id !== id);
     this.list = newList;
   }
 
   // Method to reset watch dates of all films
+  // Removes the watchDate property from each film
   this.resetWatchedFilms = () => {
     this.list.forEach((film) => delete film.watchDate);
   }
 
   // Method to get films with a rating, sorted by rating
+  // Filters and sorts films with a defined rating
   this.getRated = () => {
     const newList = this.list.filter(film => film.rating > 0)
                              .sort((d1, d2) => d2.rating - d1.rating);
@@ -72,6 +75,7 @@ function FilmLibrary() {
   }
 
   // Method to sort films by watch date
+  // Unwatched films are placed at the end
   this.sortByDate = () => {
     const newArray = [...this.list];
     newArray.sort((d1, d2) => {
@@ -84,6 +88,7 @@ function FilmLibrary() {
 }
 
 // Main function to test the FilmLibrary methods
+// Demonstrates sorting, deleting, resetting, and filtering films
 function main() {
   // Creating some film entries
   const f1 = new Film(1, "Pulp Fiction", true, "2023-03-10", 5);

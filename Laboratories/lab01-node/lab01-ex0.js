@@ -9,6 +9,14 @@
 // Array of words to process
 const words = ["spring", "summer", "a", "ab", "abc", "autumn", "winter"];
 
+// Explanation of the resizeString function logic
+/**
+ * Function to resize a string based on specific rules:
+ * - Strings shorter than 2 characters return an empty string.
+ * - Strings of length 2 or 3 repeat the first two characters twice.
+ * - Longer strings return the first two and last two characters combined.
+ */
+
 /**
  * Function to resize a string based on the given rules:
  * - If the string is shorter than 2 characters, return an empty string.
@@ -28,16 +36,19 @@ function resizeString(str) {
     }
 }
 
+// Explanation of the loop processing the words array
 // Process each word in the array and print the resized string
+// Example: "spring" -> "spng", "a" -> ""
 for (let i = 0; i < words.length; i++) {
     const str = resizeString(words[i]);
     console.log(str);  // Printing one string per line
 }
 
-// Functional alternative to process and print the whole array in one line
+// Functional alternative for processing the array
+// Uncomment the following block to process all words in one line
 /*
 const newWords = words.map((str) => resizeString(str));
-console.log(newWords);  // printing the whole array in one line
+console.log(newWords);  // Prints the entire array in one line
 */
 
 /** Other Possible Approaches **/
