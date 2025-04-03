@@ -1,0 +1,14 @@
+/* 
+ * [2024/2025]
+ * Web Applications
+ */
+
+/* Class for favorite movies - changes text color to red */
+.favorite {
+    color: red !important;
+}
+
+/* Class for empty stars to become blue on mouse over */
+.bi-star:hover {
+    color: #00d0ff;
+}
