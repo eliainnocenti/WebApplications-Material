@@ -48,7 +48,6 @@ The `qa-server-v1` presents some APIs to perform some CRUD (Create, Read, Update
 ...]
 ```
 
-
 ### Add a New Answer
 
 * `POST /api/answers`
@@ -73,4 +72,3 @@ The `qa-server-v1` presents some APIs to perform some CRUD (Create, Read, Update
 ### Vote an Answer
 
 ### Delete an Answer
-

@@ -19,4 +19,3 @@ const vehicles = [
     .reduce((sum, price, i, array) => sum + price / array.length, 0);
   
   console.log(averageSUVPrice); // 33399
-

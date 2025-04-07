@@ -1,5 +1,4 @@
 'use strict';
-
 /* Data Access Object (DAO) module for accessing questions and answers */
 
 const sqlite = require('sqlite3');
@@ -134,7 +133,7 @@ exports.createAnswer = (answer) => {
         reject(err);
         return;
       }
-      resolve(this.lastID);
+      resolve(exports.getAnswer(this.lastID));
     });
   });
 };
@@ -145,6 +144,21 @@ exports.updateAnswer = (answer) => {
   return new Promise((resolve, reject) => {
     const sql = 'UPDATE answers SET text=?, respondent=?, score=?, date=DATE(?) WHERE id = ?';
     db.run(sql, [answer.text, answer.respondent, answer.score, answer.date, answer.id], function (err) {
+      if (err) {
+        reject(err);
+        return;
+      }
+      resolve(this.changes);
+    });
+  });
+};
+
+// vote an existing answer
+exports.voteAnswer = (answerId, vote) => {
+  return new Promise((resolve, reject) => {
+    const sql = 'UPDATE answers SET score= score + ?  WHERE id = ?';
+    const delta = vote==='upvote' ? 1 : -1;
+    db.run(sql, [delta, answerId], function (err) {
       if (err) {
         reject(err);
         return;
@@ -167,18 +181,3 @@ exports.deleteAnswer = (id) => {
     });
   });
 }
-
-// vote an existing answer
-exports.voteAnswer = (answerId, vote) => {
-  return new Promise((resolve, reject) => {
-    const sql = 'UPDATE answers SET score= score + ?  WHERE id = ?';
-    const delta = vote==='upvote' ? 1 : -1;
-    db.run(sql, [delta, answerId], function (err) {
-      if (err) {
-        reject(err);
-        return;
-      }
-      resolve(this.changes);
-    });
-  });
-};

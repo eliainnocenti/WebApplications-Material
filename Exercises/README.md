@@ -31,6 +31,12 @@ This folder contains all the exercises for the Web Applications course. The exer
   - Files: `html_css/page_v1.html`, `html_css/EXERCISE.md`
   - Detailed instructions are in [`EXERCISE.md`](week05/html_css/EXERCISE.md).
 
+- **week06**
+  - 
+
+- **week07**
+  - 
+
 ## Guidelines
 
 - **Read the Instructions:** Each week has its own `EXERCISES.md` file with detailed instructions.

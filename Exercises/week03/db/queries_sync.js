@@ -2,12 +2,14 @@
 
 const sqlite = require('sqlite3');
 
+
 function queries(max_count) {
     let count = 0 ;
     let nextPrintFlag = false ;
 
     const db = new sqlite.Database('data.sqlite',
         (err) => { if (err) throw err; });
+
 
     const methods = {
         insert: () => {
@@ -44,3 +46,5 @@ function queries(max_count) {
 
 const runner = queries(100) ;
 runner.next();
+
+

@@ -1,9 +1,12 @@
 'use strict';
+
 const readline = require('readline');
+
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
     });
+    
 rl.question('Task description: ', (answer) => {
     let description = answer;
     rl.question('Is the task important? (y/n)', (answer) => {

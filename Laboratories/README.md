@@ -39,6 +39,9 @@ This folder contains all lab assignments for the Web Applications course. Labs a
   - Covers layout design, styling, and responsive behavior using Bootstrap.
   - Instructions and examples are provided in the `README.md` file within the `lab05-html-css` folder.
 
+- **lab06-js-browser**
+  - 
+
 ## How to Proceed
 
 1. **Review Lab Instructions:** Each lab folder contains detailed instructions in its README or accompanying documentation.
