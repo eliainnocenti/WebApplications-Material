@@ -5,7 +5,7 @@ const express = require('express');
 const morgan = require('morgan');  // logging middleware
 const { check, validationResult } = require('express-validator');  // validation middleware
 
-const filmDao = require('./dao-films'); // module for accessing the films table in the DB
+const filmDao = require('./routes/dao-films'); // module for accessing the films table in the DB
 
 /*** init express and set-up the middlewares ***/
 const app = express();

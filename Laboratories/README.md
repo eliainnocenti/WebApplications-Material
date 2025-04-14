@@ -11,36 +11,95 @@ This folder contains all lab assignments for the Web Applications course. Labs a
 
 ## Lab Structure
 
-- **lab01-node**  
-  - Introduction to Node.js and basic scripting.
-  - Includes exercises to help set up and familiarize with Node.js.
-  - A PDF guide ([`lab01-getting-started-node.pdf`](lab01-node/resources/lab01-getting-started-node.pdf)) is provided in the `resources` folder.
+- **lab01-node**
+  - *What is about:*
+    - Introduction to Node.js and basic scripting.
+    - Exercises to help set up and familiarize with Node.js.
+  - PDF guide ([`lab01-getting-started-node.pdf`](lab01-node/resources/lab01-getting-started-node.pdf))
+  - [`README.md`](lab01-node/README.md)
+  - *How to test it:*
+    1. Open a terminal and navigate to the `lab01-node` folder.
+    2. Run the following commands:
+       - `npm install` (if `package-lock.json` is present).
+       - `node index.js` (or the main script file for the lab).
+    3. Follow the instructions in the lab to test the implemented functionalities.
 
-- **lab02-database**  
-  - Focuses on integrating databases using SQLite.
-  - Provides scripts for managing a film library database.
-  - Detailed instructions can be found in the accompanying PDF ([`lab02-node-database.pdf`](lab02-database/resources/lab02-node-database.pdf)).
+- **lab02-database**
+  - *What is about:*
+    - Integrating databases using SQLite.
+    - Scripts for managing a film library database.
+  - PDF guide ([`lab02-node-database.pdf`](lab02-database/resources/lab02-node-database.pdf))
+  - [`README.md`](lab02-database/README.md)
+  - *How to test it:*
+    1. Open a terminal and navigate to the `lab02-database` folder.
+    2. Run the following commands:
+       - `npm install` (if `package-lock.json` is present).
+       - Ensure the `films.db` file is in the correct location.
+       - Use `node` to execute the scripts and test database queries (e.g., `node script.js`).
 
-- **lab03-express**  
-  - Covers building RESTful APIs using Express.
-  - Contains example routes, API files (`API.http`), and setup instructions.
-  - Additional guidance is provided in the PDF file ([`lab03-express.pdf`](lab03-express/resources/lab03-express.pdf)) within the `lab03-express` folder.
+- **lab03-express**
+  - *What is about:*
+    - Building RESTful APIs using Express.
+    - Example routes, API files (`API.http`), and setup instructions.
+  - PDF guide ([`lab03-express.pdf`](lab03-express/resources/lab03-express.pdf))
+  - [`README.md`](lab03-express/README.md)
+  - *How to test it:*
+    1. Open a terminal and navigate to the `lab03-express` folder.
+    2. Run the following commands:
+       - `npm install` (if `package-lock.json` is present).
+       - `node index.js` to start the server.
+    3. Use the `API.http` file with the REST Client extension in Visual Studio Code to test the APIs.
 
-- **lab04-API-server**  
-  - Focuses on enhancing the security and robustness of the API server.
-  - Implements input validation using `express-validator` and prevents SQL injection.
-  - Adds a search API to retrieve films by title.
-  - Includes testing for invalid and malicious requests.
-  - Detailed documentation is available in the `README.md` and `API.md` files within the `lab04-API-server` folder.
+- **lab04-API-server**
+  - *What is about:*
+    - Enhancing the security and robustness of the API server.
+    - Input validation using `express-validator` and prevention of SQL injection.
+    - Adding a search API to retrieve films by title.
+    - Testing for invalid and malicious requests.
+  - PDF guide ([`lab04-API-server.pdf`](lab04-API-server/resources/lab04-API-server.pdf))
+  - [`README.md`](lab04-API-server/README.md)
+  - *How to test it:*
+    1. Open a terminal and navigate to the `lab04-API-server` folder.
+    2. Run the following commands:
+       - `npm install` (if `package-lock.json` is present).
+       - `node index.js` to start the server.
+    3. Use the `API.http` file with the REST Client extension in Visual Studio Code to test the APIs.
 
-- **lab05-html-css**  
-  - Introduces front-end development using HTML, CSS, and Bootstrap.
-  - Focuses on creating a static, responsive webpage for the Film Library.
-  - Covers layout design, styling, and responsive behavior using Bootstrap.
-  - Instructions and examples are provided in the `README.md` file within the `lab05-html-css` folder.
+- **lab05-html-css**
+  - *What is about:*
+    - Front-end development using HTML, CSS, and Bootstrap.
+    - Creating a static, responsive webpage for the Film Library.
+    - Layout design, styling, and responsive behavior using Bootstrap.
+  - PDF guide ([`lab05-html-css.pdf`](lab05-html-css/resources/lab05-html-css.pdf))
+  - [`README.md`](lab05-html-css/README.md)
+  - *How to test it:*
+    1. Open the `index.html` file in a web browser.
+    2. Verify the layout, styling, and responsiveness of the webpage.
 
 - **lab06-js-browser**
-  - 
+  - *What is about:*
+    - Adding dynamic behaviors to the Film Library interface using JavaScript.
+    - Implementing filtering functionality and optional deletion of films.
+  - PDF guide ([`lab06-js-browser.pdf`](lab06-js-browser/resources/lab06-js-browser.pdf))
+  - [`README.md`](lab06-js-browser/README.md)
+  - *How to test it:*
+    1. Open the `index.html` file in a web browser.
+    2. Ensure the `films.js` and `app.js` files are correctly linked in the HTML.
+    3. Test the dynamic behaviors (e.g., filtering) in the browser.
+
+- **lab07-react**
+  - *What is about:*
+    - Setting up a React-based front-end for the Film Library.
+    - Dividing the application into components and defining props.
+    - Implementing a static list of films and filters.
+  - PDF guide ([`lab07-react.pdf`](lab07-react/resources/lab07-getting-started-react.pdf))
+  - [`README.md`](lab07-react/README.md)
+  - *How to test it:*
+    1. Open a terminal and navigate to the `lab07-react` folder.
+    2. Run the following commands:
+       - `npm install` (if `package-lock.json` is present).
+       - `npm run dev` to start the development server.
+    3. Open the application in a web browser at the URL provided by Vite.
 
 ## How to Proceed
 
