@@ -92,7 +92,7 @@ This folder contains all lab assignments for the Web Applications course. Labs a
     - Setting up a React-based front-end for the Film Library.
     - Dividing the application into components and defining props.
     - Implementing a static list of films and filters.
-  - PDF guide ([`lab07-react.pdf`](lab07-react/resources/lab07-getting-started-react.pdf))
+  - PDF guide ([`lab07-getting-started-react.pdf`](lab07-react/resources/lab07-getting-started-react.pdf))
   - [`README.md`](lab07-react/README.md)
   - *How to test it:*
     1. Open a terminal and navigate to the `lab07-react` folder.
@@ -100,6 +100,53 @@ This folder contains all lab assignments for the Web Applications course. Labs a
        - `npm install` (if `package-lock.json` is present).
        - `npm run dev` to start the development server.
     3. Open the application in a web browser at the URL provided by Vite.
+
+- **lab08-state**
+  - *What is about:*
+    - Using React state to implement dynamic UI filters.
+    - Adding a delete functionality to manage the film list.
+    - Enhancing the Film Library application with React components and state management.
+  - PDF guide ([`lab08-react-state.pdf`](lab08-state/resources/lab08-react-state.pdf))
+  - [`README.md`](lab08-state/README.md)
+  - *How to test it:*
+    1. Open a terminal and navigate to the `lab08-state` folder.
+    2. Run the following commands:
+       - `npm install` (if `package-lock.json` is present).
+       - `npm run dev` to start the development server.
+    3. Open the application in a web browser at the URL provided by Vite.
+    4. Test the filters by interacting with the sidebar options and verifying the displayed films.
+    5. Test the delete functionality by clicking the delete button for a film and ensuring it is removed from the list.
+
+- **lab09-forms**
+  - *What is about:*
+    - Adding interactive functionalities to the FilmLibrary application using React forms.
+    - Enabling users to create and edit films dynamically.
+    - Optionally validating user inputs during form submission.
+  - PDF guide ([`lab09-react-forms.pdf`](lab09-forms/resources/lab09-react-forms.pdf))
+  - [`README.md`](lab09-forms/README.md)
+  - *How to test it:*
+    1. Open a terminal and navigate to the `lab09-forms` folder.
+    2. Run the following commands:
+       - `npm install` (if `package-lock.json` is present).
+       - `npm run dev` to start the development server.
+    3. Open the application in a web browser at the URL provided by Vite.
+    4. Test the "Add a New Film" and "Edit an Existing Film" functionalities.
+    5. Verify the optional validation by submitting invalid inputs and observing the error messages.
+
+- **lab10-routes**
+  - *What is about:*
+    - Adding multiple pages to the FilmLibrary application using React Router.
+    - Implementing inline editing for specific film properties.
+  - PDF guide ([`lab10-router.pdf`](lab10-routes/resources/lab10-router.pdf))
+  - [`README.md`](lab10-routes/README.md)
+  - *How to test it:*
+    1. Open a terminal and navigate to the `lab10-routes` folder.
+    2. Run the following commands:
+       - `npm install` (if `package-lock.json` is present).
+       - `npm run dev` to start the development server.
+    3. Open the application in a web browser at the URL provided by Vite.
+    4. Test the routing by navigating between the add film, edit film, and filter routes.
+    5. Test inline editing by toggling the favorite status and changing the rating of films directly from the main page.
 
 ## How to Proceed
 
